@@ -1,0 +1,48 @@
+{
+  "name": "tailwindcss-starter",
+  "version": "0.1.0",
+  "description": "Vanilla tailwindcss with purgecss",
+  "author": "iTsense (https://www.itsense.pk)",
+  "license": "MIT",
+  "main": "build/html/index.html",
+  "homepage": "https://github.com/itsensepk/tailwindcss-starter#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/itsensepk/tailwindcss-starter.git"
+  },
+  "bugs": {
+    "url": "https://github.com/itsensepk/tailwindcss-starter/issues"
+  },
+  "keywords": [
+    "tailwindcss",
+    "tailwindcss-starter",
+    "starter-kit",
+    "vanilla-tailwindcss",
+    "tw",
+    "purgecss"
+  ],
+  "scripts": {
+    "dev": "npm-watch",
+    "compile": "cross-env NODE_ENV=devlopment postcss src/styles/tailwind.css -o build/css/tailwind.css",
+    "build": "cross-env NODE_ENV=production postcss src/styles/tailwind.css -o build/css/tailwind.css"
+  },
+  "watch": {
+    "compile": {
+      "patterns": [
+        "src/styles"
+      ],
+      "extensions": "css",
+      "quiet": false
+    }
+  },
+  "dependencies": {
+    "tailwindcss": "^1.2.0"
+  },
+  "devDependencies": {
+    "@fullhuman/postcss-purgecss": "^2.1.2",
+    "autoprefixer": "^9.7.6",
+    "cross-env": "^7.0.2",
+    "cssnano": "^4.1.10",
+    "npm-watch": "^0.6.0"
+  }
+}

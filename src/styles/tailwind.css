@@ -1,0 +1,17 @@
+/* purgecss start ignore */
+@import url("https://fonts.googleapis.com/css?family=Nunito:300,400,700");
+/*  
+    place below comment after @tailwind base,components or utilities if you want to skip them from purging. 
+    NOTE: CSS-NANO REMOVES COMMENTS TO REDUCE FILE SIZE 
+    DONT FORGET TO WRAP CUSTOM CSS INSIDE PURGECSS INGNORE COMMENTS
+*/
+body {
+  -webkit-tap-highlight-color: transparent;
+  font-family: "Nunito", "Calibri" !important;
+}
+
+/* purgecss end ignore */
+@tailwind base;
+@tailwind components;
+/* Place custom utilities/classes between @tailwind components and @tailwind utilities tags*/
+@tailwind utilities;
