@@ -1,4 +1,4 @@
-# Tailwindcss Starter
+# Tailwindcss HTML Starter
 
 Plain HTML and tailwindcss with purgeCss & CssNano
 
